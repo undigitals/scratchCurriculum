@@ -15,7 +15,7 @@ module.exports = {
       },
     ],
     sidebarConfig: {
-      forcedNavOrder: ["/introduction", "/arbitrary-arguments", "/codeblock"],
+      forcedNavOrder: ["/introduction", "/arbitrary-arguments"],
       ignoreIndex: true,
     },
   },
