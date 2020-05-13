@@ -1,0 +1,51 @@
+---
+title: "Arbitrary Arguments & Keyword Arguments"
+description: "This is the meta description"
+---
+
+# Arbitrary Arguments (`*args`)
+
+We use arbitrary arguments in python when we don't know how many parameters will be
+passed to our function.
+
+`*args` is short for Arbitrary Arguments
+
+To use `args` adding a `*` before the parameter name will be sufficient.
+
+This way the function will receive a `tuple` of arguments.
+
+```python
+def sum_up(*numbers):
+    res = 0
+    for number in numbers:
+        res+=number
+    return res
+
+print(sum_up(2,3,4,2,4,5,6,7,7)) #40
+```
+
+# Keyword Arguments
+
+In python we can also send `key = value` syntactical arguments to functions.
+
+```python
+
+def user_name(user1, user2, user3):
+    return user3
+
+print(user_name(user1="Dan", user2="Mike", user3="Holmes")) #Holmes
+
+```
+
+# Arbitrary Keyword Arguments (`**kwargs`)
+
+When we don't know how many keyword arguments will be passed into our function, we can use `**` before the
+function parameter where we receive `dictionary` arguments.
+
+```python
+def user_name(**users):
+    for user in users.values():
+        print(user)
+
+user_name(user1="Dan", user2="Mike", user3="Holmes")
+```
