@@ -1,86 +1,16 @@
 ---
 title: "6-week"
-description: "This is the meta description for this page"
+description: "empty"
 ---
 
-Lambda function is a function without name or can be created without `def` keyword. Hence,
-it's called anonymous function and all anonymous functions are called `lambda`. What? lol.
+# Maze game
 
-This function can take any number of arguments but can have only one expression.
-
-Example:
-
-```python
-x = lambda a : a*10
-print(x(10)) # 100
-```
-
-Lambda function always has to start with the`lambda` keyword and next to the keyword function
-argument which `a` in above example.
-
-Compare with python function:
-
-```python
-def x (a):
-  return a*10
-
-print(x(10)) # 100
-```
-
-Lambda function is used mostly as an argument of another functions (which is called `higher order functions or callback functions`).
-
-Example:
-
-```python
-# Program to filter out only the even items from a list
-my_list = [1, 5, 4, 6, 8, 11, 3, 12]
-
-new_list = list(filter(lambda x: (x%2 == 0) , my_list))
-
-print(new_list) # [4, 6, 8, 12]
-```
-
-The `filter()` function takes a function and a list as arguments.
-In the example above its 1st argument is `lambda` and `my_list` is the second. Lambda checks the list and if there is
-a number divisible by 2. So all the numbers divisible by 2 will be return as `list`.
-
-We can do same thing with normal functions too.
-
-```python
-my_list = [1, 5, 4, 6, 8, 11, 3, 12]
-
-def divisible(x):
-  return x%2 == 0
-
-new_list = list(filter(divisible, my_list))
-
-print(new_list) # [4, 6, 8, 12]
-```
-
-The `map()` function is also takes a function and a list as arguments.
-
-The function loops through all the items inside the list and for each item applies the function
-then returns new list which function already applied.
-
-```python
-# Program to double each item in a list using map()
-
-my_list = [1, 5, 4, 6, 8, 11, 3, 12]
-
-new_list = list(map(lambda x: x * 2 , my_list))
-
-print(new_list) # [2, 10, 8, 12, 16, 22, 6, 24]
-```
-
-Now let's see it without `lambda`.
-
-```python
-my_list = [1, 5, 4, 6, 8, 11, 3, 12]
-
-def multiply(x):
-  return x*2
-
-new_list = list(map(multiply, my_list))
-
-print(new_list) # [2, 10, 8, 12, 16, 22, 6, 24]
-```
+<iframe
+  src="https://scratch.mit.edu/projects/397209822/embed"
+  allowtransparency="true"
+  width="600"
+  height="402"
+  frameborder="0"
+  scrolling="no"
+  allowfullscreen
+></iframe>
